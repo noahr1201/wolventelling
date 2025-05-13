@@ -1,43 +1,92 @@
 @font-face {
-    font-family: "Jersey 15";
-    src: url("/path/to/font-file.woff2") format("woff2");
+  font-family: "Jersey 15";
+  src: url("/path/to/font-file.woff2") format("woff2");
 }
 
 * {
-    font-family: "Jersey 15", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 /* Ik gebruik !important lines zodat het bootstrap overschrijft. */
 a {
-    font-size: 1.3rem !important;
-    text-transform: uppercase;
+  font-size: 1.3rem !important;
+  text-transform: uppercase;
 }
 
-.logo{
-    margin-left: 1rem;
+p {
+  font-size: 1.3rem !important;
 }
 
-.links{
-    margin-right: 1rem;
+.logo {
+  margin-left: 1rem;
+}
+
+.links {
+  margin-right: 1rem;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .navbar-nav .nav-item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.navbar{
-    background-color: #ffffff !important;
+.navbar {
+  background-color: #ffffff !important;
 }
 
-h1{
-    color: black !important;
+h1 {
+  color: black !important;
+  font-size: 2.5rem !important;
 }
 
-html, body{
-    height: 100%;
+html,
+body {
+  height: 100%;
+}
+
+.content {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+.content-wrapper h1,
+.content-wrapper p {
+  flex: 1;
+}
+.content-wrapper img {
+  max-width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
 }
