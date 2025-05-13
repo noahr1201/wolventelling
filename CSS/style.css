@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Jersey 15";
+    src: url("/path/to/font-file.woff2") format("woff2");
+}
+
+* {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Ik gebruik !important lines zodat het bootstrap overschrijft. */
+a {
+    font-size: 1.3rem !important;
+    text-transform: uppercase;
+}
+
+.logo{
+    margin-left: 1rem;
+}
+
+.links{
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 2rem;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar{
+    background-color: #ffffff !important;
+}
+
+h1{
+    color: black !important;
+}
+
+html, body{
+    height: 100%;
+}
