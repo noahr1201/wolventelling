@@ -1,6 +1,8 @@
+/* Dit is de map CSS waarin het grid wordt aangeroepen en waar ik onderdelen van de kaart ontwerp :) */
+
 .map-grid {
   display: grid;
-  grid-template-columns: repeat(5, 100px); /* adjust size as needed */
+  grid-template-columns: repeat(5, 100px);
   grid-template-rows: repeat(6, 100px);
   gap: 0;
   position: relative;
@@ -8,8 +10,8 @@
 
 .tile {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 .tile img {
@@ -17,11 +19,11 @@
   height: 100%;
 }
 
-.tile .number {
+.number {
   position: absolute;
   top: 5px;
   left: 5px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255);
   padding: 2px 5px;
   font-size: 14px;
 }

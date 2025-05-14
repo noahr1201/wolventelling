@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse justify-content-end links" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Pages/gezien.php">Ik heb een wolf gezien!</a>
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="/Pages/kaart.php">Kaart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Pages/contact.php">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="/Pages/contact.php">Contact</a>
                 </ul>
             </div>
         </div>

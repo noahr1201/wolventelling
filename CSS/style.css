@@ -1,3 +1,4 @@
+/* Hier roep ik het font aan van google fonts die daarnaast in index.html aangeroepen wordt.  */
 @font-face {
   font-family: "Jersey 15";
   src: url("/path/to/font-file.woff2") format("woff2");
@@ -8,7 +9,11 @@
   font-weight: 400;
   font-style: normal;
 }
+
 /* Ik gebruik !important lines zodat het bootstrap overschrijft. */
+
+/* Elementen */
+
 a {
   font-size: 1.3rem !important;
   text-transform: uppercase;
@@ -16,6 +21,39 @@ a {
 
 p {
   font-size: 1.3rem !important;
+}
+
+
+h1 {
+  color: black !important;
+  font-size: 2.5rem !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Klasses */
+
+.nav-link active {
+  color: #ffffff !important;
 }
 
 .logo {
@@ -36,16 +74,6 @@ p {
 
 .navbar {
   background-color: #ffffff !important;
-}
-
-h1 {
-  color: black !important;
-  font-size: 2.5rem !important;
-}
-
-html,
-body {
-  height: 100%;
 }
 
 .content {
@@ -70,23 +98,15 @@ body {
   flex: 1;
 }
 
-a {
-  color: #000 !important;
-  text-decoration: none !important;
-}
+/* Hier zorg ik ervoor dat de website smooth werkt op mobiel door de items onder elkaar te zetten d.m.v flex-direction: column; */
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th,
-td {
-  padding: 15px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
-
-th {
-  background-color: #f4f4f4;
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .content-wrapper h1,
+  .content-wrapper p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
